@@ -66,12 +66,12 @@ def main():
     print(f'HostMax:   {last}')
     print(f'Hosts/Net: {num_of_addresses}')
 
-    print('Would like to to subdivide that network into smaller networks?\n')
+    print('Would like to to subdivide that network into smaller networks?')
 
     answer = input()
 
     if answer.lower() == 'yes':
-        print('What size networks would you like them to be?\n')
+        print('What size networks would you like them to be?')
     else:
         print('Then I have nothing more to offer you')
 
