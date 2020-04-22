@@ -48,7 +48,7 @@ def main():
     dot = '.'
     wildcard = dot.join(wilcard_octets)
 
-    hosts = list(network_object.hosts())192.
+    hosts = list(network_object.hosts())
     first = hosts[0]
     last = hosts[-1]
     num_of_addresses = len(hosts)
@@ -77,5 +77,5 @@ def main():
 
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": 
     main()
