@@ -48,7 +48,7 @@ def main():
     dot = '.'
     wildcard = dot.join(wilcard_octets)
 
-    hosts = list(network_object.hosts())
+    hosts = list(network_object.hosts())192.
     first = hosts[0]
     last = hosts[-1]
     num_of_addresses = len(hosts)
@@ -65,6 +65,17 @@ def main():
     print(f'HostMin:   {first}')
     print(f'HostMax:   {last}')
     print(f'Hosts/Net: {num_of_addresses}')
+
+    print('Would like to to subdivide that network into smaller networks?\n')
+
+    answer = input()
+
+    if answer.lower() == 'yes':
+        print('What size networks would you like them to be?\n')
+    else:
+        print('Then I have nothing more to offer you')
+
+
 
 if __name__ == "__main__":
     main()
