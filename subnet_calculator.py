@@ -72,6 +72,17 @@ def main():
 
     if answer.lower() == 'yes':
         print('What size networks would you like them to be?')
+        print(f'The current prefix Length is: {network_object.prefixlen} ')
+        newprefixlen = int(input())
+        print(type(newprefixlen))
+        new_networks = list(network_object.subnets(new_prefix=newprefixlen))
+        print('The new networks are ')
+        print(new_networks)
+          
+
+
+
+        
     else:
         print('Then I have nothing more to offer you')
 
