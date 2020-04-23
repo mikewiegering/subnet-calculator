@@ -41,7 +41,7 @@ def main():
             break
         else:
 
-         # network object
+            # network object
             network_object = ipaddress.ip_network(network, strict=False)
             netmask = str(network_object.netmask)
             netmask_octets = netmask.split('.')
@@ -63,7 +63,6 @@ def main():
 
             if is_private:
                 print(f'Network:   {network_object} (private network)')
-            else:
                 print(f'Network:   {network_object}')
                 print(f'Netmask:   {network_object.netmask} = {network_object.prefixlen}')
                 print(f'Wildcard:  {wildcard}')
@@ -71,6 +70,8 @@ def main():
                 print(f'HostMin:   {first}')
                 print(f'HostMax:   {last}')
                 print(f'Hosts/Net: {num_of_addresses}')
+            else:
+                print('That is not a private network')
 
 # This section asks the user if they would like to subdivide that network into smaller networks
 
